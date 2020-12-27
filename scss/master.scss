@@ -1,9 +1,20 @@
+@import '_webfont.scss';
 .wrapper {
     overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    &.beautiful {
+        font-family: 'Rubik', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 .container {
     overflow: hidden;
     padding: 20px;
+}
+.anchor {
+    font-family: 'disket_monobold';
+    &__for-desktop {
+        display: none;
+    }
 }
 .desktop-anchor {
     display: none;

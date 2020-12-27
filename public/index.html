@@ -10,10 +10,10 @@
 <body>
     <div class="wrapper">
         <header class="container">
-            <h1 class="desktop-anchor">
+            <h1 class="anchor anchor__for-desktop">
                 <a href="/">Aire | Libre</a>
             </h1>
-            <h1 class="mobile-anchor">
+            <h1 class="anchor anchor__for-mobile">
                 <a href="/">A | L</a>
             </h1>
         </header>
@@ -82,4 +82,19 @@
         </section>
     </div> 
 </body>
+<script>
+    WebFontConfig = {
+    google: { families: [ 'Rubik:400:700:latin'] }
+  };
+  (function() {
+    setTimeout(function () {document.getElementsByTagName('body')[0].classList.add('beautiful');}, 1000);
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+</script>
 </html>
