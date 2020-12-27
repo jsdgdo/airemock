@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/master.css">
 </head>
-<body> 
-    <h1>Aire libre</h1>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <h1 class="desktop-anchor">
+                <a href="/">Aire | Libre</a>
+            </h1>
+            <h1 class="mobile-anchor">
+                <a href="/">A | L</a>
+            </h1>
+        </header>
+        <main class="container current-reading current-reading--is-good">
+            <h2 class="reading">Libre</h2>
+            <a class="reading-help" href="#">Learn more</a>
+            <h3 class="reading-index">AQI <b>178</b></h3>
+            <p class="reading-description">Sin restricciones para actividades al aire libre</p>
+            <h4 class="reading-sensor">Fernando de la mora</h4>
+            <small class="reading-lu">Actualizado hace 5 minutos</small>
+        </main>
+        <section class="container actions">
+            <select name="sensors" id="sensor" class="btn btn--drop">
+                <option value="0" selected>Más Sensores</option>
+                <option value="1">Luque</option>
+                <option value="2">Trinidad</option>
+            </select>
+            <button class="btn">Dar mi ubicación</button>
+        </section>
+        <section class="container info">
+            <h2 class="info__title">Qué es AQI?</h2>
+            <p class="info__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quos, tenetur deleniti minima laborum vero ipsa aliquid, eaque porro praesentium corporis est soluta repellendus! Obcaecati recusandae explicabo maxime accusantium modi.</p>
+        </section>
+        <section class="container info">
+            <h2 class="info__title">La escala</h2>
+            <ul class="readings">
+                <li class="reading-info reading-info--is-good">
+                    <h3 class="reading-info__title">Libre</h3>
+                    <h4 class="reading-info__index">AQI <b>0-50</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+                <li class="reading-info reading-info--is-moderate">
+                    <h3 class="reading-info__title">Maso</h3>
+                    <h4 class="reading-info__index">AQI <b>51-100</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+                <li class="reading-info reading-info--is-sensitive">
+                    <h3 class="reading-info__title">No tan bien</h3>
+                    <h4 class="reading-info__index">AQI <b>101-150</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+                <li class="reading-info reading-info--is-unhealthy">
+                    <h3 class="reading-info__title">Insalubre</h3>
+                    <h4 class="reading-info__index">AQI <b>151-200</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+                <li class="reading-info reading-info--is-very-unhealthy">
+                    <h3 class="reading-info__title">Muy Insalubre</h3>
+                    <h4 class="reading-info__index">AQI <b>201-300</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+                <li class="reading-info reading-info--is-dangerous">
+                    <h3 class="reading-info__title">Peligroso</h3>
+                    <h4 class="reading-info__index">AQI <b>300+</b></h4>
+                    <p class="reading-info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam voluptate molestias, consequuntur</p>
+                </li>
+            </ul>
+        </section>
+        <section class="container info">
+            <h2 class="info__title">Red abierta de sensores</h2>
+            <p class="info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero a eveniet harum praesentium. Tempore magni rerum ea ex maxime, debitis inventore quia sint, modi asperiores, reprehenderit pariatur ipsam earum ipsum.</p>
+            
+            <div id="map" class="map">
+
+            </div>
+        </section>
+    </div> 
 </body>
 </html>
