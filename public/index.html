@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aire Libre</title>
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/master.css">
 </head>
@@ -18,10 +18,13 @@
             </h1>
         </header>
         <main class="container current-reading current-reading--is-good">
-            <h2 class="reading">Libre</h2>
-            <a class="reading-help" href="#">Learn more</a>
+            <div class="reading">
+                <h2 alt="Libre" class="reading__text reading__text--regular">No tan bien</h2>
+                <a class="reading-help" href="#"><img src="/ico/question.svg" alt="Saber más"></a>
+            </div>
+            
             <h3 class="reading-index">AQI <b>178</b></h3>
-            <p class="reading-description">Sin restricciones para actividades al aire libre</p>
+            <p class="reading-desc">Sin restricciones para actividades al aire libre</p>
             <h4 class="reading-sensor">Fernando de la mora</h4>
             <small class="reading-lu">Actualizado hace 5 minutos</small>
         </main>
@@ -31,7 +34,7 @@
                 <option value="1">Luque</option>
                 <option value="2">Trinidad</option>
             </select>
-            <button class="btn">Dar mi ubicación</button>
+            <button class="btn"><img src="/ico/location-pin.svg" alt="Pin de ubicación"> Dar mi ubicación</button>
         </section>
         <section class="container info">
             <h2 class="info__title">Qué es AQI?</h2>
