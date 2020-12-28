@@ -11,7 +11,7 @@
     <div class="wrapper">
         <header class="head">
             <h1 class="anchor anchor__for-desktop">
-                <a href="/">Aire | Libre</a>
+                <a href="/">Aire|Libre</a>
             </h1>
             <h1 class="anchor anchor__for-mobile">
                 <a href="/">A|L</a>
@@ -19,13 +19,15 @@
         </header>
         <main class="container current-reading current-reading--is-good">
             <div class="reading">
-                <h2 alt="Libre" class="reading__text reading__text--regular">No tan bien</h2>
-                <a class="reading-help" href="#"><img src="/ico/question.svg" alt="Saber más"></a>
+                <!-- <h2 alt="Libre" class="reading__text reading__text--regular">No tan bien</h2> -->
+                <!-- <h2 alt="Libre" class="reading__text reading__text--large reading__text--break-2">Maso</h2> -->
+                <h2 alt="Libre" class="reading__text reading__text--large">Libre</h2>
+                <a class="reading-help" href="#scale" title="Saber más"><img src="/ico/question.svg" alt="Saber más"></a>
             </div>
             
             <h3 class="reading-index">AQI <b>178</b></h3>
             <p class="reading-desc">Sin restricciones para actividades al aire libre</p>
-            <h4 class="reading-sensor">Fernando de la mora</h4>
+            <h4 class="reading-sensor">Fernando de la mora <a href="#map">Dónde?</a></h4>
             <small class="reading-lu">Actualizado hace 5 minutos</small>
         </main>
         <section class="container actions">
@@ -40,7 +42,7 @@
             <h2 class="info__title">Qué es AQI?</h2>
             <p class="info__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quos, tenetur deleniti minima laborum vero ipsa aliquid, eaque porro praesentium corporis est soluta repellendus! Obcaecati recusandae explicabo maxime accusantium modi.</p>
         </section>
-        <section class="container info">
+        <section id="scale" class="container info">
             <h2 class="info__title">La escala</h2>
             <ul class="readings">
                 <li class="reading-info reading-info--is-good">
@@ -83,6 +85,9 @@
 
             </div>
         </section>
+        <footer class="container">
+            <span>Aire libre es un proyecto libre, si querés saber más escribinos <a href="#">acá</a></span>
+        </footer>
     </div> 
 </body>
 <script>
